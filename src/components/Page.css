@@ -1,0 +1,24 @@
+.item {
+	display: inline-block;
+	padding: 6px 10px;
+	margin: 2px;
+	border: 1px solid #ccc;
+	color: rgb(84, 191, 226);
+	cursor: pointer;
+}
+
+.disabled {
+	cursor: not-allowed;
+	color: #ccc;
+}
+
+.current {
+	margin-left: 10px;
+}
+
+.active {
+	border: none;
+	color: #f40;
+	cursor: auto;
+	padding: 0px 5px;
+}
