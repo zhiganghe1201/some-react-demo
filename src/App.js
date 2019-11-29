@@ -1,14 +1,24 @@
-import React from 'react';
-import ThreeLayout from './components/common/ThreeLayout';
+import React, { Component } from 'react'
+// import NumberInput from './components/NunberInput';
+import Reservation from './components/Reservation';
 
-const App = () => {
-	return (
-		<div>
-			<ThreeLayout left={(<div>左边的</div>)}>
-				<span>我是中间的</span>
-			</ThreeLayout>
-		</div>
-	);
+export default class App extends Component {
+	state = {
+		val: 124
+	}
+	render() {
+		return (
+			<div>
+				{/* <input value={this.state.val} onChange={(e) => {
+					this.setState({
+						val: e.target.value
+					})
+				}} /> */}
+
+				{/* <NumberInput /> */}
+				<Reservation />
+
+			</div>
+		)
+	}
 }
-
-export default App;
